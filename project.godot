@@ -14,20 +14,24 @@ compatibility/default_parent_skeleton_in_mesh_instance_3d=true
 
 [application]
 
-config/name="Zoomies"
-run/main_scene="uid://buqu8l6ujukse"
-config/features=PackedStringArray("4.6", "Forward Plus")
+config/name="tinysurf"
+run/main_scene="res://scenes/base_menu/BaseMenu.tscn"
+config/features=PackedStringArray("4.7", "C#", "Forward Plus")
 config/icon="res://icon.svg"
 
 [autoload]
 
-Config="*res://autoload/Config.gd"
+State="*res://autoload/State.cs"
 
 [display]
 
 window/size/viewport_width=1920
 window/size/viewport_height=1080
 window/size/mode=2
+
+[dotnet]
+
+project/assembly_name="Zoomies"
 
 [input]
 

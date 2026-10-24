@@ -4,7 +4,7 @@ TinySurf is a simple movement based video game inspired by CS1.6 / Source / CS:G
 
 ## Download
 
-You can find the latest release of TinySurf [here](https://github.com/m0rsim4rsi/tinysurf/releases).
+You can find the latest release of TinySurf [here](https://github.com/vuorioma/tinysurf/releases).
 
 ## Creating your own TinySurf map
 

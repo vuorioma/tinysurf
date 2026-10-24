@@ -1,0 +1,18 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scenes/menu_background/MenuBackground.cs" id="1_bg"]
+[ext_resource type="AudioStream" uid="uid://4j5wyvalncft" path="res://resources/audio/track01.mp3" id="2_bg"]
+
+[node name="MenuBackground" type="CanvasLayer" unique_id=1489023119]
+layer = -1
+script = ExtResource("1_bg")
+
+[node name="Video" type="VideoStreamPlayer" parent="." unique_id=1489023120]
+mouse_filter = 2
+volume_db = -80.0
+expand = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1731480833]
+stream = ExtResource("2_bg")
+autoplay = true
+parameters/looping = true

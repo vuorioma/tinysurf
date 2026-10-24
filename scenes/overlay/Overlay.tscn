@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://ccrtkupqwmrsx"]
 
-[ext_resource type="Script" uid="uid://tfxv8m6sbjmt" path="res://scenes/overlay/Overlay.gd" id="1_4655l"]
+[ext_resource type="Script" uid="uid://cg5ri4ga81e5x" path="res://scenes/overlay/Overlay.cs" id="1_4655l"]
+[ext_resource type="Theme" uid="uid://cskagwswhhry6" path="res://resources/fonts/oxanium/regular.tres" id="2_4655l"]
 
 [node name="Overlay" type="Node2D" unique_id=1430389185]
 script = ExtResource("1_4655l")
@@ -11,3 +12,37 @@ script = ExtResource("1_4655l")
 offset_right = 150.0
 offset_bottom = 87.0
 text = "00:00:0000"
+
+[node name="Countdown" type="Label" parent="CanvasLayer" unique_id=1489023161]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("2_4655l")
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 16
+theme_override_font_sizes/font_size = 160
+text = "3"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Speed" type="Label" parent="CanvasLayer" unique_id=1489023162]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -150.0
+offset_top = -120.0
+offset_right = 150.0
+offset_bottom = -40.0
+grow_horizontal = 2
+grow_vertical = 0
+theme = ExtResource("2_4655l")
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 48
+text = "0.00"
+horizontal_alignment = 1
+vertical_alignment = 1

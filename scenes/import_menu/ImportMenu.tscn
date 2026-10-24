@@ -1,0 +1,36 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scenes/import_menu/ImportMenu.cs" id="1_menu"]
+[ext_resource type="Theme" uid="uid://cskagwswhhry6" path="res://resources/fonts/oxanium/regular.tres" id="2_menu"]
+
+[node name="ImportMenu" type="Control" unique_id=1489023141]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1_menu")
+
+[node name="Heading" type="RichTextLabel" parent="." unique_id=1489023144]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 96.0
+offset_bottom = 160.0
+grow_horizontal = 2
+mouse_filter = 2
+theme = ExtResource("2_menu")
+theme_override_font_sizes/normal_font_size = 40
+bbcode_enabled = true
+text = "[center]Import map[/center]"
+
+[node name="Back" type="Button" parent="." unique_id=1489023145]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -67.0
+offset_right = 163.0
+grow_vertical = 0
+text = "Back"

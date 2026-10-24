@@ -1,17 +1,15 @@
 [gd_scene format=3 uid="uid://dsdbfcpsje21o"]
 
 [ext_resource type="PackedScene" uid="uid://ubcfbqyaamq3" path="res://scenes/player/Player.tscn" id="1_1oml7"]
-[ext_resource type="Script" uid="uid://beqr7u85o8fn4" path="res://scenes/world/World.gd" id="1_gbddb"]
-[ext_resource type="Script" uid="uid://bhc41wv5x71q3" path="res://scenes/player/Player.gd" id="2_6eebf"]
+[ext_resource type="Script" uid="uid://sadaai7w2cgh" path="res://scenes/world/World.cs" id="1_gbddb"]
+[ext_resource type="Script" uid="uid://bm7klh2gjp1wc" path="res://scenes/player/Player.cs" id="2_6eebf"]
 [ext_resource type="PackedScene" uid="uid://ccrtkupqwmrsx" path="res://scenes/overlay/Overlay.tscn" id="4_gbddb"]
-[ext_resource type="Script" uid="uid://tfxv8m6sbjmt" path="res://scenes/overlay/Overlay.gd" id="5_qxiha"]
 
 [node name="World" type="Node3D" unique_id=1242902762]
 script = ExtResource("1_gbddb")
 
 [node name="Player" parent="." unique_id=714973664 instance=ExtResource("1_1oml7")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0, 0.5, 0)
 script = ExtResource("2_6eebf")
 
 [node name="Overlay" parent="." unique_id=1430389185 instance=ExtResource("4_gbddb")]
-script = ExtResource("5_qxiha")

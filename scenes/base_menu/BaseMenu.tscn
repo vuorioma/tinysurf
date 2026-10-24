@@ -1,0 +1,44 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scenes/base_menu/BaseMenu.cs" id="1_base"]
+[ext_resource type="Theme" uid="uid://cskagwswhhry6" path="res://resources/fonts/oxanium/regular.tres" id="2_base"]
+[ext_resource type="PackedScene" path="res://scenes/menu_background/MenuBackground.tscn" id="3_base"]
+
+[node name="BaseMenu" type="Node2D" unique_id=1489023151]
+script = ExtResource("1_base")
+
+[node name="MenuBackground" parent="." instance=ExtResource("3_base") unique_id=1489023152]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1489023153]
+
+[node name="Title" type="RichTextLabel" parent="CanvasLayer" unique_id=1489023154]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme = ExtResource("2_base")
+theme_override_font_sizes/normal_font_size = 48
+bbcode_enabled = true
+text = "tinysurf"
+
+[node name="Content" type="Control" parent="CanvasLayer" unique_id=1489023155]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="Quit" type="Button" parent="CanvasLayer" unique_id=1489023156]
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -163.0
+offset_top = -67.0
+grow_horizontal = 0
+grow_vertical = 0
+text = "Quit to Desktop"
